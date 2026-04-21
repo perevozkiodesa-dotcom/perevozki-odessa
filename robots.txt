@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://perevozki-odessa.in.ua/sitemap.xml
