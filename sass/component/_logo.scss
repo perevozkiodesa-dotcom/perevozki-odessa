@@ -1,0 +1,145 @@
+.logo__link__text.logo__link__ua {
+  span {
+    font-size: 13px;
+
+    @include tablet {
+      font-size: 12px;
+      letter-spacing: 0;
+    }
+    @include desktop {
+      font-size: 15px;
+    }
+  }
+}
+.logo__city.logo__city__ua {
+  span {
+    @include desktop {
+      font-size: 14px;
+      letter-spacing: 0.68px;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  @include tablet {
+    position: relative;
+  }
+  @include desktop {
+    position: static;
+  }
+}
+
+.logo__link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: 30px;
+  @include mobile {
+    margin-right: 60px;
+  }
+
+  @include tablet {
+    margin-right: 10px;
+  }
+
+  @include desktop {
+    margin-right: 40px;
+  }
+}
+
+.logo__link__img {
+  display: block;
+  width: 40px;
+  height: 40px;
+
+  @include mobile {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+.logo__link__text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: 0.32px;
+  text-transform: uppercase;
+  span {
+    color: var(--accent-color);
+    display: block;
+    white-space: nowrap;
+  }
+
+  @include mobile {
+    font-size: 18px;
+  }
+
+  @include tablet {
+    font-size: 16px;
+    span {
+      font-size: 14px;
+      letter-spacing: 1.54px;
+    }
+  }
+
+  @include desktop {
+    font-size: 20px;
+    letter-spacing: 0.32px;
+    span {
+      font-size: inherit;
+      letter-spacing: inherit;
+    }
+  }
+}
+
+.logo__city {
+  // margin-left: 30px;
+
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+
+  span {
+    text-transform: lowercase;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: normal;
+  }
+
+  @include mobile {
+    // margin-left: 60px;
+
+    font-size: 24px;
+    letter-spacing: 0.32px;
+    letter-spacing: 2.2px;
+
+    span {
+      font-size: 14px;
+    }
+  }
+
+  @include tablet {
+  }
+}
+
+.logo__slogan {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  background: var(--accent-color);
+  padding: 4px 0;
+  font-size: 14px;
+  text-transform: capitalize;
+  text-align: center;
+}

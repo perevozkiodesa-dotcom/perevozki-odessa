@@ -1,0 +1,93 @@
+.hero__overlay__title.hero__title__ua {
+  font-size: 24px;
+  @include desktop{
+    font-size: 38px;
+  }
+}
+
+.hero__overlay {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 118px 0;
+  max-width: 480px;
+
+  background-color: var(--hero-bg-color);
+  background-image:
+    linear-gradient(to right, rgba(7, 8, 11, 0.7), rgba(7, 8, 11, 0.7)),
+    url("../img/mobile/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image:
+      linear-gradient(to right, rgba(7, 8, 11, 0.7), rgba(7, 8, 11, 0.7)),
+      url("../img/mobile/hero2x.jpg");
+  }
+
+  @include tablet {
+    max-width: 768px;
+    background-image:
+      linear-gradient(to right, rgba(7, 8, 11, 0.7), rgba(7, 8, 11, 0.7)),
+      url("../img/tablet/hero-tablet.jpg");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(to right, rgba(7, 8, 11, 0.7), rgba(7, 8, 11, 0.7)),
+        url("../img/tablet/hero-tablet2x.jpg");
+    }
+  }
+
+  @include desktop {
+    padding: 200px 0;
+    max-width: 1600px;
+    background-image:
+      linear-gradient(to right, rgba(7, 8, 11, 0.7), rgba(7, 8, 11, 0.7)),
+      url("../img/desktop/hero.jpg");
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image:
+        linear-gradient(to right, rgba(7, 8, 11, 0.7), rgba(7, 8, 11, 0.7)),
+        url("../img/desktop/hero2x.jpg");
+    }
+  }
+}
+
+.hero__overlay__title {
+  margin-bottom: 30px;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+  word-wrap: break-word;
+
+  @include tablet {
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include desktop {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.hero__overlay__text {
+  margin-bottom: 30px;
+  text-align: center;
+  color: var(--white-color);
+
+  @include desktop {
+    font-size: 24px;
+  }
+}

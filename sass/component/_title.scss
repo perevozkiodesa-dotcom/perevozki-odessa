@@ -1,0 +1,25 @@
+.title {
+  margin-bottom: 30px;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+
+  @include desktop {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
+}
+
+.title--white {
+  color: var(--white-color);
+}
+
+.title.small {
+  font-size: 24px;
+  margin-bottom: 20px;
+}

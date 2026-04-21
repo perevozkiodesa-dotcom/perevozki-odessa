@@ -1,0 +1,45 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: var(--bg-color);
+  color: var(--primary-text-color);
+
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+}
+.lists {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+#services,
+#vehicles,
+#about,
+#contacts {
+  scroll-margin-top: 152px;
+  scroll-behavior: smooth;
+  @media screen and (min-width: 768px) {
+    scroll-margin-top: 60px;
+  }
+}
+
+main {
+  flex: 1;
+}
+
+.policy__link {
+  text-decoration: underline;
+  transition: color var(--animation-main);
+  &:hover {
+    color: var(--accent-second-color);
+  }
+}

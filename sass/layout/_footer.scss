@@ -1,0 +1,9 @@
+.footer {
+  background-color: var(--accent-color);
+  padding: 10px 0;
+  &__text {
+    display: block;
+    text-align: center;
+    color: var(--white-color);
+  }
+}

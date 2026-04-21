@@ -1,0 +1,20 @@
+:root {
+  --primary-text-color: #1a1a1a; //new
+  --title-text-color: #212121; //maybe leave
+  --accent-color: #237227; //new
+  --accent-second-color: #309335; //new
+  --accent-action-color: #ff9800;
+  --accent-dark-color: rgb(255, 165, 31);
+
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --bg-color: #ffffff;
+  --modal-bg-color: #ffffff;
+  --hero-bg-color: #2f303a;
+  --section-second-color: #f5f4fa;
+  --address-link-color: rgba(255, 255, 255, 0.6);
+
+  --vh: 1vh;
+
+  --animation-main: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

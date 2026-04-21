@@ -1,0 +1,109 @@
+.burger {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 90%;
+  height: 100vh;
+  z-index: 999;
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px 0 0 4px;
+
+  transform: translateX(100%); /* спрятан справа */
+  transition: transform 300ms ease;
+
+  &__close {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      fill: var(--accent-second-color);
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &__backdrop {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    background: #0000004e;
+    transition:
+      opacity 300ms ease,
+      visibility 300ms ease;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 12px;
+    margin-bottom: 20px;
+
+    &__item__link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 400;
+      font-size: 20px;
+      padding: 8px 0;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+
+    &__item__link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 400;
+      font-size: 20px;
+      padding: 8px 0;
+    }
+  }
+}
+
+.burger__backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.burger__backdrop:not(.is-hidden) .burger {
+  transform: translateX(0); /* выезжает */
+}
+
+.burger__nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 80px;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 28px;
+
+  &__link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      color: var(--accent-second-color);
+    }
+  }
+}
